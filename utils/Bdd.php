@@ -1,7 +1,7 @@
 <?php
 
 // Charge les variables d'environnement
-require_once __DIR__.'/env-loader.php';
+require_once __DIR__ . (file_exists(__DIR__ . '/env-loader.php') ? '/env-loader.php' : '/env-loader-prod.php');
 
 /////////////////////////////////////
 //Création des Fonctions Utilitaires
