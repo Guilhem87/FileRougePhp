@@ -1,0 +1,185 @@
+/*===================Page INSCRIPTION====================================*/
+
+.header_inscri {
+    background: rgb(98,90,235);
+    background: linear-gradient(90deg, rgba(98,90,235,1) 0%, rgba(22,22,207,1) 7%, rgba(185,239,250,1) 78%); 
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    h1 {
+        color: white;
+    }
+}
+
+.main_inscri {
+    display: flex;
+    margin:0%;
+    img {
+        flex: 1;
+        height: 1057px;
+        min-width: fit-content;
+    }
+    article {
+        font-size: large;
+        background-color: rgb(225, 239, 245);
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10%;
+        max-width: 100%;
+        box-sizing: border-box;
+        h2 {
+            padding-bottom: 6%;
+        }
+        }
+    button {
+            margin-top: 3px;
+            margin-bottom: 30px;
+            width: 350px;
+            height: 45px;
+            border-radius: 15px;
+            background-color: rgb(7, 38, 73);
+            color: white;
+            justify-content: center;
+        }
+    button:hover {
+        background-color: rgb(150, 190, 188);
+        box-shadow: 0px 0px 10px lightskyblue;
+    }
+    div:nth-child(2) {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            margin-bottom: 40px;
+            padding-top: 20px;
+            img {
+                height: 6vh;
+            }
+        }
+    div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 20px;
+        margin: auto;
+        padding-right: 0;
+        p   {
+            font-size: large;
+            img {
+                height: 4vh;
+            }
+        }
+    }
+    .logo_docto {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            justify-content: center;
+    }
+}
+
+/*++++++++++++++++++++++POP UP ++++++++++++++*/
+
+/* Pop-ups */
+#popup, #popup2 {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 128, 0.4); /* Fond bleu transparent */
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Effet flou sur le fond */
+  }
+  
+  /* Contenu des pop-ups */
+  #popup-content, #popup2 #popup-content {
+    position: relative;
+    background: #f0f8ff; /* Bleu clair */
+    margin: 10% auto;
+    padding: 20px 15px;
+    width: 90%; /* Ajusté pour petits écrans */
+    max-width: 350px; /* Largeur maximale */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 128, 0.3);
+    animation: popupAnimation 0.3s ease-out; /* Animation d'apparition */
+    overflow: hidden; /* Assure que tout reste à l'intérieur */
+  }
+  
+  /* Animation pour les pop-ups */
+  @keyframes popupAnimation {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Bouton de fermeture */
+  #close-popup, #close-popup2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #004080; /* Bleu foncé */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  #close-popup:hover, #close-popup2:hover {
+    color: #000080; /* Accentuation au survol */
+  }
+  
+  /* Champs de formulaire */
+  form input[type="email"],
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #004080; /* Bleu foncé */
+    border-radius: 8px;
+    background: #e6f2ff; /* Bleu très clair */
+    font-size: 14px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  form input[type="email"]:focus,
+  form input[type="text"]:focus,
+  form input[type="password"]:focus {
+    background: #d6eaff; /* Bleu plus clair */
+    border-color: #1e90ff; /* Bleu vif */
+    outline: none;
+  }
+  
+  /* Bouton de soumission */
+  form button[type="submit"] {
+    background: #1e90ff; /* Bleu vif */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* S'étend sur toute la largeur du formulaire */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Espacement avec le champ précédent */
+  }
+  
+  form button[type="submit"]:hover {
+    background: #4682b4; /* Bleu acier */
+    transform: scale(1.05);
+  }
+  

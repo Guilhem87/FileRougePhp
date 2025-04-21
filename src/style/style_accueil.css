@@ -1,0 +1,206 @@
+div:nth-child(3) {
+    font-size: smaller;
+    padding-right: 40px;
+}
+header nav {
+    position: fixed;
+}
+main {
+    margin: 60px;
+    .a1 {
+        margin-top: 100px;
+        .text1 {
+            word-spacing: 3px;
+            background-color: rgb(13, 13, 107);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 80px;
+            color: rgb(5, 5, 82);
+            text-shadow: 2px 5px 2px lightgray;
+        }
+    }
+    .span3 {
+        text-align: center;
+        text-decoration-line: overline underline; /*soulignement surlignement*/
+        text-decoration-thickness: 3px;
+        color: rgb(5, 5, 82);
+    }
+    .ul_intro {
+        margin: 75px;
+        display: grid; /* Grid pour bien répartir mes images les unes à coté des autres 3 lignes 3colonnes */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        strong {
+                color: rgb(5, 5, 82);
+        }
+        img {
+                width: 150px;
+                height: 150px;
+        }
+        li {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+        }
+        li:first-child {
+            font-size: 100%;
+            width: 100%;
+            height: auto;
+        }
+        li:first-child img { /* utilisation des childs pour ne pas avoir a donner un nom aux li de ma ul*/
+            padding-bottom: 30px;
+            width: 120px;
+            height: 130px;
+        }
+        li:nth-child(2) {
+            padding-bottom: 35px;
+        }
+        li:nth-child(3) {
+                padding-bottom: 30px;
+        }
+        li:nth-child(4) img {
+                height: 130px;
+                width: 130px;
+                padding-bottom: 30px;
+        }
+        li:last-child {
+                grid-column: 2 / 3;
+                grid-row: 3;
+        }
+    }
+    /*.pend {
+        padding-bottom: 80px;
+        border-bottom: 1px solid grey;
+    }*/
+}
+.a2 {
+    word-spacing: 2px;
+    /*border: double red;*/
+    border-radius: 10px;
+    margin: 60px;
+    padding: 30px;
+    background-color: rgb(236, 146, 146);
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: red;
+            text-shadow: 2px 2px 1px rgb(175, 19, 19);
+            animation: clignoter 1s infinite; /*clignotement infini*/
+        }
+        p {
+            padding-top: 20px;
+            text-align: center;
+            font-size: larger;
+        }
+        div {
+            display: flex;
+            margin-block: 70px;
+            justify-content: space-between;
+        }
+        img { 
+            height: 250px;
+            width: 190px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+}
+@keyframes clignoter {
+    0% { 
+        opacity: 1; 
+    }  /* Le texte est visible */
+    50% {
+        opacity: 0;   
+    } /* Le texte devient invisible au milieu de l'animation */
+    100% {
+        opacity: 1;
+    } /* Le texte réapparaît à la fin de l'animation */
+
+}
+.a3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(197, 223, 240);
+    border: solid 1px lightblue;
+    height: 200px;
+    border-radius: 10px;
+    margin: 60px;
+    img {
+        height: 3vh;
+    }
+    p {
+        font-size: large;
+    }
+}
+.a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 208, 243);
+    border: solid 1px rgb(170, 208, 243);
+    height: 200px;
+    border-radius: 10px;
+    margin: 60px;
+    font-size: larger;
+}
+
+
+.ident_bless {
+    display: inline-block;
+    text-decoration: none;
+    color: #8e44ad;
+    font-size: 22px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.ident_bless a {
+    text-decoration: none;
+    color: inherit;
+    img {
+        width: 80px;
+    }
+}
+
+.ident_bless::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    opacity: 0;
+    transform: scaleX(0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: #2ecc71;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ident_bless:hover {
+    transform: translateY(-5px);
+    transform: scale(1.2);
+    color: #27ae60;
+    text-decoration: none;
+}
+
+.ident_bless:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+

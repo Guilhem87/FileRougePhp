@@ -1,0 +1,215 @@
+/* Mobile Responsive Stylesheet */
+@media screen and (max-width: 768px) {
+    /* Global Reset and Layout */
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    /* Header Adjustments */
+    .headcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .headcontent #logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .headcontent #logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .headcontent .t1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headcontent .t1 h1 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /* Remove decorative elements */
+    .headcontent .container,
+    .shape1,
+    .shape2,
+    .deco1,
+    .deco2 {
+        display: none;
+    }
+
+    /* Main Content Adjustments */
+    main, 
+    .main_inscri, 
+    .contenu3d, 
+    #main_corps {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Typography */
+    h1, h2 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+
+    p, span, a, button {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Specific Adjustments for Attention Section */
+    .a2 p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        width: 95%;
+        margin: 5px auto;
+        text-align: justify;
+    }
+
+    /* Third Section (a3) Specific Adjustments */
+    .a3 p {
+        width: 95%;
+        text-align: center;
+        font-size: 0.9em;
+        margin: 0;
+        padding: 5px;
+        line-height: 1.5;
+    }
+
+    .a3 a {
+        font-size: 0.9em;
+    }
+
+    .a3 img {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    /* Sections Adjustments */
+    main .a1,
+    main .a2,
+    main .a4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    /* Images in Sections */
+    main .a2 div img {
+        width: 80px;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    /* Inline Images */
+    .a4 img {
+        width: 30px;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    /* Inscription Page */
+    .main_inscri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_inscri article {
+        width: 95%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_inscri > img:last-child {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        margin: 10px 0;
+    }
+
+    .main_inscri button {
+        width: 95%;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    /* 3D Page */
+    #img3d {
+        width: 95%;
+        height: 450px;
+        margin: 10px auto;
+    }
+
+    /* Popup Adjustments */
+    #popup-content, 
+    #popup2 #popup-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 15px;
+    }
+}
+
+/* PETITS AJUSTEMENTS */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .headcontent #logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main_inscri > img:last-child {
+        max-height: 200px;
+    }
+
+    p, span, a, button {
+        font-size: 0.8em;
+    }
+
+    .a3 p {
+        font-size: 0.8em;
+    }
+}
+
+
+/*LISTE DES BLESSURES RESPONSIFE*/
+    
+@media (max-width: 1200px) {
+    .blessure-card {
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .blessure-card {
+        max-width: 100%;
+    }
+    
+    .blessures-container {
+        width: 95%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,79 @@
+/* Style pour le main */ 
+#main_corps {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#main_corps h2 {
+    text-align: center;
+    font-size: 2.2em; /* Taille de police plus grande */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style pour chaque section de blessure */
+.blessure {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%; /* Assurez-vous que les divs prennent toute la largeur disponible */
+    box-sizing: border-box; /* Inclure les paddings et les bordures dans la largeur totale */
+    display: flex;
+    flex-wrap: wrap; /* Permet de gérer les retours à la ligne si nécessaire */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Div pour le texte de chaque blessure */
+.blessure-text {
+    flex: 1;
+    max-width: 60%; /* Limite la largeur du texte */
+}
+
+/* Pour les titres de blessure */
+.blessure h3 {
+    font-size: 1.8em; /* Taille de police plus grande */
+    margin-bottom: 15px; /* Un peu plus d'espacement */
+    color: #333;
+}
+
+/* Pour le texte descriptif */
+.blessure p {
+    margin-bottom: 15px; /* Espacement entre les paragraphes */
+    line-height: 1.8; /* Plus d'espacement entre les lignes */
+    font-size: 1.2em; /* Texte un peu plus grand */
+    color: #555;
+}
+
+/* Div pour les images de chaque blessure */
+.blessure-images {
+    flex: 1;
+    max-width: 35%; /* Limite la largeur des images */
+    display: flex;
+    flex-direction: column; /* Pour placer l'image secondaire en dessous */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style de l'image principale */
+.blessure-images .main-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Style de l'image secondaire */
+.blessure-images .secondary-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 20px auto; /* Centre l'image sous l'image principale */
+    border-radius: 8px;
+}
+
